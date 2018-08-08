@@ -10,6 +10,12 @@ namespace BeeBuzziness
     {
         static void Main(string[] args)
         {
-        }
+            Console.WriteLine("Veuillez saisir un nombre.");
+            string nombre = Console.ReadLine();
+
+            AffichageLCD lcd = new AffichageLCD();
+            lcd.Print(nombre);
+
+        }        
     }
 }
